@@ -1,0 +1,128 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap";
+:root {
+    --cor-base: #ff69b4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    text-align: center;
+    background-color: #282a36;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+header{
+    padding: 32px;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0, 0.1);
+}
+.links{
+    text-align: center;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 16px;
+}
+.links a:hover {
+    color: var(--cor-base);
+    transition: color 500ms;
+    text-decoration: underline #fff;
+}
+#img { 
+    padding: 32px;
+    color: white;
+}
+#img img {
+    border-radius: 50%;
+    border: solid 5px var(--cor-base); /* rgba(252,70,107,1);*/
+    width: 250px;
+    height: 250px;
+    margin-bottom: 32px;
+}
+#img h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+#img h2{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+#img p{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+#final a{
+    border-bottom: var(--cor-base) 2px solid;
+}
+#final a:hover{
+    text-decoration: none;
+}
+#final {
+    margin-bottom: 32px;
+}
+/*CARDS*/
+.cards{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card{
+    background: var(--cor-base);
+}
+.card img{
+    width: 100%;
+}
+.sobre-card{
+    padding: 10px 25px;
+}
+.sobre-card p{
+    background-color: var(--cor-base);
+    filter: brightness(90%);
+    border-radius: 10px;
+}
+
+/* MODAL*/
+
+.modal-grande{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(40, 42, 54,0.7);
+    position: fixed;
+    top: 0;
+
+}
+.modal-medio{
+    background-color: #fff;
+    height: 90%;
+    width: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+.xis{
+    width: 29px;
+    float:right;
+}
+.xis:hover{
+    cursor: pointer;
+    background-color: rgb(255, 107, 107);
+}
+.xis i{
+    color: black;
+}
+.ativado{
+    display: none;
+}
