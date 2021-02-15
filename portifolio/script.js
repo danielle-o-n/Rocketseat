@@ -1,13 +1,14 @@
 const botaoXis = document.querySelector(".xis");
 const cards = document.querySelectorAll(".card");
 const modalGrande = document.querySelector(".modal-grande");
-botaoXis.addEventListener("click", ()=>{
-    modalGrande.classList.add("ativado");
-})
 
 for (const card of cards) {
-    addEventListener("click", ()=>{
-        modalGrande.remove("ativado")
+    card.addEventListener("click", ()=>{
+        modalGrande.classList.remove("ativado");
     })
 }
+botaoXis.addEventListener("click", (e)=>{
+    modalGrande.classList.add("ativado");
+    console.log(e);
+})
 
