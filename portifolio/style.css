@@ -126,3 +126,7 @@ header{
 .ativado{
     display: none;
 }
+.modal-medio img{
+    height: 90%;
+    margin-top: 50px;
+}
