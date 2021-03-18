@@ -1,0 +1,36 @@
+{% extends "layout.njk" %}
+{% block header%}
+    <meta charset="UTF-8">
+    <title>Danielle Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block conteudo %}
+
+    <div id="img">
+        <h1>Certificados</h1>
+    </div>
+    <section class="cards">
+        {% for iten in itens%}
+        <div class="card">
+            <div class="img-card">
+                <img src="{{iten.caminho}}" alt="">
+            </div>
+            <div class="sobre-card">
+                <p>{{iten.descricao}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+
+    <div class="modal-grande ativado">
+        <div class="modal-medio">
+            <img src="" alt="">
+            <div class="xis">
+                <i class="material-icons">close</i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+{% endblock %}
