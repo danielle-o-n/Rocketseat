@@ -9,19 +9,9 @@
 {% block conteudo %}
 
     <div id="img">
-        <h1>Certificados</h1>
+        <h1>{{iten.descricao}}</h1>
     </div>
-    <section class="cards">
-        {% for iten in itens%}
-        <div class="card">
-            <div class="img-card">
+    <section class="certificados">
                 <img src="{{iten.caminho}}" alt="">
-            </div>
-            <div class="sobre-card">
-                <p>{{iten.descricao}}</p>
-            </div>
-        </div>
-        {% endfor %}
     </section>
-    <script src="script.js"></script>
 {% endblock %}

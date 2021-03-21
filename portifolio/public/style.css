@@ -39,7 +39,7 @@ header{
 }
 #img img {
     border-radius: 50%;
-    border: solid 5px var(--cor-base); /* rgba(252,70,107,1);*/
+    border: solid 5px var(--cor-base); 
     width: 250px;
     height: 250px;
     margin-bottom: 32px;
@@ -129,4 +129,9 @@ header{
 .modal-medio img{
     height: 90%;
     margin-top: 50px;
+}
+.certificados img{
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
 }
